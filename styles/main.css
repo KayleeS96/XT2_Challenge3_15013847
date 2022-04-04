@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Orbitron;
+    src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4b4b4b;
+    font-family: Orbitron;
+}
+
+h1 {
+    font-family: Orbitron;
+    color: white;
+}
+
+section {
+    display: flex;
+}
+
+h2{
+    font-family: Orbitron;
+    color: white;
+}
+
+
+#map, #weather{
+    background-color: #f8f8f87e;
+}
+
+#weather {
+    color: white;
+    font-family: Orbitron;
+    font-size: 3em;
+    text-align: center;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 16px;
+  color: #000;
+}
+.mapboxgl-popup-content {
+  padding: 20px 25px 15px 20px;
+  color: #000;
+  background-color: #175641;
+  font-family: Orbitron;
+}
+.mapboxgl-popup-content h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-family: Orbitron;
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: #175641;
+} 
+
+
+
+/* Media Queries x3 */
+
+@media only screen and (max-width: 600px){
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #map{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+    }
+
+    #weather {
+        width: 400px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 950px){
+
+    h1 {
+        font-size: 3.3em;
+        text-align: center;
+    }
+
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #map{
+        width: 400px;
+        height: 400px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    #weather {
+        width: 400px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+
+    h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #map{
+        width: 500px;
+        height: 500px;
+        margin-right: 10px;
+    }
+
+    #weather {
+        width: 400px;
+        height: 200px;
+        margin-right: 10px;
+    }
+
+}
+
